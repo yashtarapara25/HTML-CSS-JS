@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.player-container {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+}
+
+.song-info p {
+  margin: 5px 0;
+}
+
+.controls button {
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.controls button:disabled {
+  background-color: #cccccc;
+}
+
+.controls button:hover {
+  background-color: #1976D2;
+}
+
+.progress-container input {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.volume-container input {
+  width: 100%;
+}
+
+#playPauseBtn {
+  background-color: #4CAF50;
+}
+
+#playPauseBtn:active {
+  background-color: #45a049;
+}

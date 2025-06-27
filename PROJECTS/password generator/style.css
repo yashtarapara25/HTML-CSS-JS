@@ -1,0 +1,75 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #1c92d2, #f2fcfe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  text-align: center;
+}
+
+.output {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.output input {
+  flex: 1;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.output button {
+  padding: 10px;
+  font-size: 18px;
+  background: #2196f3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.controls {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.controls label {
+  display: block;
+  margin: 10px 0;
+}
+
+.controls input[type="range"] {
+  width: 100%;
+}
+
+.controls button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.strength {
+  margin-top: 20px;
+}
+
+.bar {
+  height: 10px;
+  background: lightgray;
+  border-radius: 5px;
+  transition: background 0.3s, width 0.3s;
+}

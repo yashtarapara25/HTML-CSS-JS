@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎧 Music Player</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="player-container">
+    <h1>🎶 Music Player</h1>
+    <div class="song-info">
+      <p id="songName">No Song Selected</p>
+      <p id="songArtist">No Artist</p>
+    </div>
+    <audio id="audioPlayer" preload="auto">
+      <!-- Add a song URL here, or leave empty for local files -->
+      <source src="song.mp3" type="audio/mp3">
+    </audio>
+    <div class="controls">
+      <button id="prevBtn">⏮️</button>
+      <button id="playPauseBtn">▶️</button>
+      <button id="nextBtn">⏭️</button>
+    </div>
+    <div class="progress-container">
+      <input type="range" id="progressBar" value="0" step="1" min="0" max="100">
+    </div>
+    <div class="volume-container">
+      <label for="volume">Volume</label>
+      <input type="range" id="volume" value="100" max="100" step="1">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

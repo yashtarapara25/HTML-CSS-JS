@@ -1,0 +1,71 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  transition: 0.3s;
+}
+body.dark {
+  background: #1e1e1e;
+  color: white;
+}
+.container {
+  text-align: center;
+  padding: 20px;
+}
+.buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+.palette {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.color-box {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.color-box:hover {
+  transform: scale(1.05);
+}
+.color-code {
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.7);
+  color: #000;
+  font-weight: bold;
+  padding: 2px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+body.dark .color-code {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+.saved-palettes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.saved-palettes .palette {
+  flex-direction: row;
+  margin: 10px 0;
+}
